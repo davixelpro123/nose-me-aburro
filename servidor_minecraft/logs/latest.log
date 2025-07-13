@@ -645,3 +645,208 @@ Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1:
 [13Jul2025 15:28:15.929] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 9400ms or 188 ticks behind
 [13Jul2025 15:31:03.586] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Unknown or incomplete command, see below for error
 [13Jul2025 15:31:03.587] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: k<--[HERE]
+[13Jul2025 15:36:47.331] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Unknown or incomplete command, see below for error
+[13Jul2025 15:36:47.342] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: m<--[HERE]
+[13Jul2025 15:37:57.031] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Unknown or incomplete command, see below for error
+[13Jul2025 15:37:57.033] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: homero<--[HERE]
+[13Jul2025 15:37:59.181] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Unknown or incomplete command, see below for error
+[13Jul2025 15:37:59.194] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: homero<--[HERE]
+[13Jul2025 15:38:00.630] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Unknown or incomplete command, see below for error
+[13Jul2025 15:38:00.631] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: homero<--[HERE]
+[13Jul2025 15:38:01.931] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Unknown or incomplete command, see below for error
+[13Jul2025 15:38:01.939] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: homero<--[HERE]
+[13Jul2025 15:38:03.831] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Unknown or incomplete command, see below for error
+[13Jul2025 15:38:03.835] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: homero<--[HERE]
+[13Jul2025 15:38:05.181] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Unknown or incomplete command, see below for error
+[13Jul2025 15:38:05.181] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: homer<--[HERE]
+[13Jul2025 15:38:07.682] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Unknown or incomplete command, see below for error
+[13Jul2025 15:38:07.697] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: homer<--[HERE]
+[13Jul2025 15:38:08.881] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Unknown or incomplete command, see below for error
+[13Jul2025 15:38:08.894] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: homer<--[HERE]
+[13Jul2025 15:38:09.680] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Unknown or incomplete command, see below for error
+[13Jul2025 15:38:09.683] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: homer<--[HERE]
+[13Jul2025 15:38:10.531] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Unknown or incomplete command, see below for error
+[13Jul2025 15:38:10.531] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: homer<--[HERE]
+[13Jul2025 15:38:11.481] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Unknown or incomplete command, see below for error
+[13Jul2025 15:38:11.496] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: homer<--[HERE]
+[13Jul2025 15:38:12.931] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Unknown or incomplete command, see below for error
+[13Jul2025 15:38:12.932] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: hmoer<--[HERE]
+[13Jul2025 15:42:28.386] [ForkJoinPool.commonPool-worker-4/WARN] [SkinRestorer/]: Failed to fetch skin 'mojang:wazabroder'
+java.lang.IllegalStateException: not found
+	at net.lionarius.skinrestorer.util.WebUtils.throwOnClientErrors(WebUtils.java:77) ~[?:?]
+	at net.lionarius.skinrestorer.skin.provider.MojangSkinProvider.getProfile(MojangSkinProvider.java:128) ~[?:?]
+	at net.lionarius.skinrestorer.skin.provider.MojangSkinProvider.lambda$static$0(MojangSkinProvider.java:52) ~[?:?]
+	at net.minecraft.server.players.GameProfileCache.m_10993_(GameProfileCache.java:98) ~[?:?]
+	at net.minecraft.server.players.GameProfileCache.m_10996_(GameProfileCache.java:150) ~[?:?]
+	at net.lionarius.skinrestorer.skin.provider.MojangSkinProvider.fetchSkin(MojangSkinProvider.java:99) ~[?:?]
+	at net.minecraft.server.network.ServerLoginPacketListenerImpl.md96a1af$lambda$skinrestorer$fetchSkin$1$1(ServerLoginPacketListenerImpl.java:582) ~[?:?]
+	at java.util.Optional.map(Optional.java:260) ~[?:?]
+	at net.minecraft.server.network.ServerLoginPacketListenerImpl.skinrestorer$fetchSkin(ServerLoginPacketListenerImpl.java:581) ~[?:?]
+	at net.minecraft.server.network.ServerLoginPacketListenerImpl.md96a1af$lambda$waitForSkin$0$2(ServerLoginPacketListenerImpl.java:566) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?]
+[13Jul2025 15:42:28.440] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: wazabroder[/100.65.118.107:60065] logged in with entity id 885 at (229.5, 86.0, -29.5)
+[13Jul2025 15:42:28.510] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: wazabroder joined the game
+[13Jul2025 15:43:44.000] [Server thread/WARN] [net.minecraft.server.level.ServerPlayerGameMode/]: Mismatch in destroy block pos: BlockPos{x=0, y=0, z=0} BlockPos{x=230, y=86, z=-28}
+[13Jul2025 15:43:46.545] [Server thread/WARN] [net.minecraft.server.level.ServerPlayerGameMode/]: Mismatch in destroy block pos: BlockPos{x=0, y=0, z=0} BlockPos{x=230, y=87, z=-28}
+[13Jul2025 15:43:46.844] [Server thread/WARN] [net.minecraft.server.level.ServerPlayerGameMode/]: Mismatch in destroy block pos: BlockPos{x=0, y=0, z=0} BlockPos{x=230, y=87, z=-28}
+[13Jul2025 15:43:54.076] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: davixlapida123[/100.114.148.74:57118] logged in with entity id 1368 at (229.69999998807907, 87.0, -28.00308586327756)
+[13Jul2025 15:43:54.140] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: davixlapida123 joined the game
+[13Jul2025 15:43:54.705] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: crisrob[/100.101.109.86:49249] logged in with entity id 1372 at (225.5, 96.0, -34.5)
+[13Jul2025 15:43:54.720] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: crisrob joined the game
+[13Jul2025 15:43:56.401] [Server thread/WARN] [net.minecraft.server.level.ServerPlayerGameMode/]: Mismatch in destroy block pos: BlockPos{x=0, y=0, z=0} BlockPos{x=231, y=86, z=-28}
+[13Jul2025 15:43:57.362] [Server thread/WARN] [net.minecraft.server.level.ServerPlayerGameMode/]: Mismatch in destroy block pos: BlockPos{x=0, y=0, z=0} BlockPos{x=231, y=86, z=-28}
+[13Jul2025 15:43:59.943] [Server thread/WARN] [net.minecraft.server.level.ServerPlayerGameMode/]: Mismatch in destroy block pos: BlockPos{x=0, y=0, z=0} BlockPos{x=230, y=86, z=-28}
+[13Jul2025 15:44:00.369] [Server thread/WARN] [net.minecraft.server.level.ServerPlayerGameMode/]: Mismatch in destroy block pos: BlockPos{x=0, y=0, z=0} BlockPos{x=230, y=87, z=-28}
+[13Jul2025 15:44:03.273] [Server thread/WARN] [net.minecraft.server.level.ServerPlayerGameMode/]: Mismatch in destroy block pos: BlockPos{x=0, y=0, z=0} BlockPos{x=230, y=86, z=-28}
+[13Jul2025 15:44:07.375] [Server thread/WARN] [net.minecraft.server.level.ServerPlayerGameMode/]: Mismatch in destroy block pos: BlockPos{x=0, y=0, z=0} BlockPos{x=231, y=86, z=-28}
+[13Jul2025 15:44:08.219] [Server thread/WARN] [net.minecraft.server.level.ServerPlayerGameMode/]: Mismatch in destroy block pos: BlockPos{x=0, y=0, z=0} BlockPos{x=231, y=86, z=-28}
+[13Jul2025 15:44:08.827] [Server thread/WARN] [net.minecraft.server.level.ServerPlayerGameMode/]: Mismatch in destroy block pos: BlockPos{x=0, y=0, z=0} BlockPos{x=230, y=86, z=-28}
+[13Jul2025 15:44:09.694] [Server thread/WARN] [net.minecraft.server.level.ServerPlayerGameMode/]: Mismatch in destroy block pos: BlockPos{x=0, y=0, z=0} BlockPos{x=230, y=86, z=-28}
+[13Jul2025 15:44:11.699] [Server thread/WARN] [net.minecraft.server.level.ServerPlayerGameMode/]: Mismatch in destroy block pos: BlockPos{x=0, y=0, z=0} BlockPos{x=230, y=86, z=-28}
+[13Jul2025 15:44:11.919] [Server thread/WARN] [net.minecraft.server.level.ServerPlayerGameMode/]: Mismatch in destroy block pos: BlockPos{x=0, y=0, z=0} BlockPos{x=230, y=86, z=-27}
+[13Jul2025 15:44:23.449] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: davixlapida123 lost connection: Disconnected
+[13Jul2025 15:44:23.449] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: davixlapida123 left the game
+[13Jul2025 15:44:30.246] [Server thread/WARN] [net.minecraft.server.level.ServerPlayerGameMode/]: Mismatch in destroy block pos: BlockPos{x=0, y=0, z=0} BlockPos{x=230, y=85, z=-27}
+[13Jul2025 15:44:39.521] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Made crisrob a server operator
+[13Jul2025 15:45:02.298] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: crisrob lost connection: Disconnected
+[13Jul2025 15:45:02.298] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: crisrob left the game
+[13Jul2025 15:45:11.345] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: No player was found
+[13Jul2025 15:45:21.096] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: No player was found
+[13Jul2025 15:45:21.848] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: No player was found
+[13Jul2025 15:45:32.951] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: No player was found
+[13Jul2025 15:45:33.312] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: crisrob[/100.101.109.86:49257] logged in with entity id 1622 at (225.5, 96.0, -34.5)
+[13Jul2025 15:45:33.338] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: crisrob joined the game
+[13Jul2025 15:45:35.247] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Set crisrob's game mode to Spectator Mode
+[13Jul2025 15:45:53.102] [Server thread/WARN] [net.minecraft.server.level.ServerPlayerGameMode/]: Mismatch in destroy block pos: BlockPos{x=0, y=0, z=0} BlockPos{x=232, y=80, z=-18}
+[13Jul2025 15:45:53.148] [Server thread/WARN] [net.minecraft.server.level.ServerPlayerGameMode/]: Mismatch in destroy block pos: BlockPos{x=0, y=0, z=0} BlockPos{x=232, y=79, z=-18}
+[13Jul2025 15:45:53.765] [Server thread/WARN] [net.minecraft.server.level.ServerPlayerGameMode/]: Mismatch in destroy block pos: BlockPos{x=0, y=0, z=0} BlockPos{x=232, y=79, z=-17}
+[13Jul2025 15:45:56.197] [Server thread/WARN] [net.minecraft.server.level.ServerPlayerGameMode/]: Mismatch in destroy block pos: BlockPos{x=0, y=0, z=0} BlockPos{x=232, y=78, z=-17}
+[13Jul2025 15:45:56.346] [Server thread/WARN] [net.minecraft.server.level.ServerPlayerGameMode/]: Mismatch in destroy block pos: BlockPos{x=0, y=0, z=0} BlockPos{x=232, y=78, z=-17}
+[13Jul2025 15:46:03.196] [Server thread/WARN] [net.minecraft.server.level.ServerPlayerGameMode/]: Mismatch in destroy block pos: BlockPos{x=0, y=0, z=0} BlockPos{x=232, y=78, z=-17}
+[13Jul2025 15:46:08.901] [Server thread/WARN] [net.minecraft.server.level.ServerPlayerGameMode/]: Mismatch in destroy block pos: BlockPos{x=0, y=0, z=0} BlockPos{x=229, y=76, z=-22}
+[13Jul2025 15:46:08.950] [Server thread/WARN] [net.minecraft.server.level.ServerPlayerGameMode/]: Mismatch in destroy block pos: BlockPos{x=0, y=0, z=0} BlockPos{x=229, y=76, z=-23}
+[13Jul2025 15:46:09.104] [Server thread/WARN] [net.minecraft.server.level.ServerPlayerGameMode/]: Mismatch in destroy block pos: BlockPos{x=0, y=0, z=0} BlockPos{x=229, y=76, z=-23}
+[13Jul2025 15:46:09.150] [Server thread/WARN] [net.minecraft.server.level.ServerPlayerGameMode/]: Mismatch in destroy block pos: BlockPos{x=0, y=0, z=0} BlockPos{x=228, y=76, z=-23}
+[13Jul2025 15:46:09.196] [Server thread/WARN] [net.minecraft.server.level.ServerPlayerGameMode/]: Mismatch in destroy block pos: BlockPos{x=0, y=0, z=0} BlockPos{x=227, y=76, z=-23}
+[13Jul2025 15:46:31.193] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: crisrob lost connection: Disconnected
+[13Jul2025 15:46:31.193] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: crisrob left the game
+[13Jul2025 15:47:39.946] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: No player was found
+[13Jul2025 15:47:43.172] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: crisrob[/100.101.109.86:49260] logged in with entity id 2096 at (225.5, 96.0, -34.5)
+[13Jul2025 15:47:43.198] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: crisrob joined the game
+[13Jul2025 15:48:00.052] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Nothing changed. The player already is an operator
+[13Jul2025 15:48:44.546] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: crisrob lost connection: Timed out
+[13Jul2025 15:48:44.546] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: crisrob left the game
+[13Jul2025 15:50:03.464] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: davixlapida123[/100.114.148.74:57281] logged in with entity id 2636 at (229.69999998807907, 87.0, -28.00308586327756)
+[13Jul2025 15:50:03.485] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: davixlapida123 joined the game
+[13Jul2025 15:50:06.056] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Set davixlapida123's game mode to Spectator Mode
+[13Jul2025 15:50:31.910] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <davixlapida123> asd
+[13Jul2025 15:50:36.424] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: davixlapida123 lost connection: Disconnected
+[13Jul2025 15:50:36.424] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: davixlapida123 left the game
+[13Jul2025 15:51:05.773] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: davixlapida123[/100.114.148.74:57299] logged in with entity id 3219 at (230.31811492244952, 88.0, -27.858485015730725)
+[13Jul2025 15:51:05.800] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: davixlapida123 joined the game
+[13Jul2025 15:51:25.249] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: wazabroder has made the advancement [Monster Hunter]
+[13Jul2025 15:51:35.096] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <davixlapida123> asd
+[13Jul2025 15:51:45.209] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: davixlapida123 lost connection: Timed out
+[13Jul2025 15:51:45.210] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: davixlapida123 left the game
+[13Jul2025 15:52:14.514] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: davixlapida123[/100.114.148.74:57311] logged in with entity id 3551 at (230.31811492244952, 88.0, -27.858485015730725)
+[13Jul2025 15:52:14.536] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: davixlapida123 joined the game
+[13Jul2025 15:52:43.665] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <davixlapida123> asd
+[13Jul2025 15:52:49.000] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: wazabroder was shot by Pillager
+[13Jul2025 15:52:52.646] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: davixlapida123 lost connection: Timed out
+[13Jul2025 15:52:52.646] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: davixlapida123 left the game
+[13Jul2025 15:53:02.613] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: crisrob[/100.101.109.86:49350] logged in with entity id 3875 at (225.5, 96.0, -34.5)
+[13Jul2025 15:53:02.631] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: crisrob joined the game
+[13Jul2025 15:53:36.712] [Server thread/INFO] [net.minecraft.server.network.ServerLoginPacketListenerImpl/]: com.mojang.authlib.GameProfile@3a55f435[id=<null>,name=davixlapida123,properties={},legacy=false] (/100.114.148.74:57323) lost connection: Timed out
+[13Jul2025 15:53:44.303] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: wazabroder has made the advancement [Local Brewery]
+[13Jul2025 15:53:51.765] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: davixlapida123[/100.114.148.74:57329] logged in with entity id 4094 at (230.31811492244952, 88.0, -27.858485015730725)
+[13Jul2025 15:53:51.784] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: davixlapida123 joined the game
+[13Jul2025 15:53:54.457] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: davixlapida123 lost connection: Disconnected
+[13Jul2025 15:53:54.457] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: davixlapida123 left the game
+[13Jul2025 15:54:03.903] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: crisrob lost connection: Timed out
+[13Jul2025 15:54:03.904] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: crisrob left the game
+[13Jul2025 15:54:14.906] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: wazabroder lost connection: Timed out
+[13Jul2025 15:54:14.906] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: wazabroder left the game
+[13Jul2025 15:54:57.589] [ForkJoinPool.commonPool-worker-12/WARN] [SkinRestorer/]: Failed to fetch skin 'mojang:crisrob'
+java.util.concurrent.ExecutionException: java.io.IOException: /10.0.0.111:54872: GOAWAY received
+	at com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:588) ~[guava-31.1-jre.jar%2374!/:?]
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:547) ~[guava-31.1-jre.jar%2374!/:?]
+	at com.google.common.util.concurrent.AbstractFuture$TrustedFuture.get(AbstractFuture.java:113) ~[guava-31.1-jre.jar%2374!/:?]
+	at com.google.common.util.concurrent.Uninterruptibles.getUninterruptibly(Uninterruptibles.java:240) ~[guava-31.1-jre.jar%2374!/:?]
+	at com.google.common.cache.LocalCache$Segment.getAndRecordStats(LocalCache.java:2317) ~[guava-31.1-jre.jar%2374!/:?]
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2283) ~[guava-31.1-jre.jar%2374!/:?]
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2159) ~[guava-31.1-jre.jar%2374!/:?]
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2049) ~[guava-31.1-jre.jar%2374!/:?]
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3966) ~[guava-31.1-jre.jar%2374!/:?]
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3989) ~[guava-31.1-jre.jar%2374!/:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4950) ~[guava-31.1-jre.jar%2374!/:?]
+	at net.lionarius.skinrestorer.skin.provider.MojangSkinProvider.fetchSkin(MojangSkinProvider.java:103) ~[?:?]
+	at net.minecraft.server.network.ServerLoginPacketListenerImpl.md96a1af$lambda$skinrestorer$fetchSkin$1$1(ServerLoginPacketListenerImpl.java:582) ~[?:?]
+	at java.util.Optional.map(Optional.java:260) ~[?:?]
+	at net.minecraft.server.network.ServerLoginPacketListenerImpl.skinrestorer$fetchSkin(ServerLoginPacketListenerImpl.java:581) ~[?:?]
+	at net.minecraft.server.network.ServerLoginPacketListenerImpl.md96a1af$lambda$waitForSkin$0$2(ServerLoginPacketListenerImpl.java:554) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?]
+Caused by: java.io.IOException: /10.0.0.111:54872: GOAWAY received
+	at jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:591) ~[java.net.http:?]
+	at jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:123) ~[java.net.http:?]
+	at net.lionarius.skinrestorer.util.WebUtils.executeRequest(WebUtils.java:52) ~[?:?]
+	at net.lionarius.skinrestorer.skin.provider.MojangSkinProvider.getProfileWithProperties(MojangSkinProvider.java:145) ~[?:?]
+	at net.lionarius.skinrestorer.skin.provider.MojangSkinProvider.loadSkin(MojangSkinProvider.java:112) ~[?:?]
+	at net.lionarius.skinrestorer.skin.provider.MojangSkinProvider$1.load(MojangSkinProvider.java:74) ~[?:?]
+	at net.lionarius.skinrestorer.skin.provider.MojangSkinProvider$1.load(MojangSkinProvider.java:71) ~[?:?]
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3533) ~[guava-31.1-jre.jar%2374!/:?]
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2282) ~[guava-31.1-jre.jar%2374!/:?]
+	... 17 more
+Caused by: java.io.IOException: /10.0.0.111:54872: GOAWAY received
+	at jdk.internal.net.http.Http2Connection.handleGoAway(Http2Connection.java:1210) ~[java.net.http:?]
+	at jdk.internal.net.http.Http2Connection.handleConnectionFrame(Http2Connection.java:1069) ~[java.net.http:?]
+	at jdk.internal.net.http.Http2Connection.processFrame(Http2Connection.java:831) ~[java.net.http:?]
+	at jdk.internal.net.http.frame.FramesDecoder.decode(FramesDecoder.java:155) ~[java.net.http:?]
+	at jdk.internal.net.http.Http2Connection$FramesController.processReceivedData(Http2Connection.java:237) ~[java.net.http:?]
+	at jdk.internal.net.http.Http2Connection.asyncReceive(Http2Connection.java:757) ~[java.net.http:?]
+	at jdk.internal.net.http.Http2Connection$Http2TubeSubscriber.processQueue(Http2Connection.java:1531) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256) ~[java.net.http:?]
+	at jdk.internal.net.http.Http2Connection$Http2TubeSubscriber.runOrSchedule(Http2Connection.java:1548) ~[java.net.http:?]
+	at jdk.internal.net.http.Http2Connection$Http2TubeSubscriber.onNext(Http2Connection.java:1575) ~[java.net.http:?]
+	at jdk.internal.net.http.Http2Connection$Http2TubeSubscriber.onNext(Http2Connection.java:1509) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SSLTube$DelegateWrapper.onNext(SSLTube.java:210) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SSLTube$SSLSubscriberWrapper.onNext(SSLTube.java:492) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SSLTube$SSLSubscriberWrapper.onNext(SSLTube.java:295) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SubscriberWrapper$DownstreamPusher.run1(SubscriberWrapper.java:316) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SubscriberWrapper$DownstreamPusher.run(SubscriberWrapper.java:259) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SubscriberWrapper.outgoing(SubscriberWrapper.java:232) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SubscriberWrapper.outgoing(SubscriberWrapper.java:198) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SSLFlowDelegate$Reader.processData(SSLFlowDelegate.java:458) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SSLFlowDelegate$Reader$ReaderDownstreamPusher.run(SSLFlowDelegate.java:282) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:205) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230) ~[java.net.http:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[13Jul2025 15:54:57.643] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: crisrob[/100.101.109.86:49366] logged in with entity id 4173 at (225.5, 96.0, -34.5)
+[13Jul2025 15:54:57.662] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: crisrob joined the game
+[13Jul2025 15:56:00.143] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: crisrob lost connection: Timed out
+[13Jul2025 15:56:00.143] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: crisrob left the game
+[13Jul2025 15:56:45.243] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: davixlapida123[/100.114.148.74:57420] logged in with entity id 4239 at (230.31811492244952, 88.0, -27.858485015730725)
+[13Jul2025 15:56:45.263] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: davixlapida123 joined the game
