@@ -1,0 +1,308 @@
+---- Minecraft Crash Report ----
+// Don't be sad. I'll do better next time, I promise!
+
+Time: 2025-07-13 16:43:25
+Description: Feature placement
+
+java.lang.NullPointerException: Cannot invoke "String.toLowerCase(java.util.Locale)" because "p_10997_" is null
+	at net.minecraft.server.players.GameProfileCache.m_10996_(GameProfileCache.java:131) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,re:classloading}
+	at net.minecraft.world.level.block.entity.SkullBlockEntity.handler$can000$fetchProfileByName(SkullBlockEntity.java:530) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,re:classloading,pl:mixin:APP:skinrestorer.mixins.json:SkullBlockEntityMixin,pl:mixin:A}
+	at net.minecraft.world.level.block.entity.SkullBlockEntity.m_155738_(SkullBlockEntity.java) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,re:classloading,pl:mixin:APP:skinrestorer.mixins.json:SkullBlockEntityMixin,pl:mixin:A}
+	at net.minecraft.world.level.block.entity.SkullBlockEntity.m_59780_(SkullBlockEntity.java:134) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,re:classloading,pl:mixin:APP:skinrestorer.mixins.json:SkullBlockEntityMixin,pl:mixin:A}
+	at net.minecraft.world.level.block.entity.SkullBlockEntity.m_59769_(SkullBlockEntity.java:130) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,re:classloading,pl:mixin:APP:skinrestorer.mixins.json:SkullBlockEntityMixin,pl:mixin:A}
+	at net.minecraft.world.level.block.entity.SkullBlockEntity.m_142466_(SkullBlockEntity.java:78) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,re:classloading,pl:mixin:APP:skinrestorer.mixins.json:SkullBlockEntityMixin,pl:mixin:A}
+	at net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate.m_230328_(StructureTemplate.java:251) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:forge:forge_method_redirector,re:classloading,pl:accesstransformer:B,xf:fml:forge:forge_method_redirector,pl:mixin:APP:integrated_api-common.mixins.json:structures.StructureTemplateMixin,pl:mixin:APP:integrated_api-common.mixins.json:structures.TemplateAccessor,pl:mixin:APP:betterdeserttemples.mixins.json:StructureTemplateMixin,pl:mixin:APP:blueprint.mixins.json:StructureTemplateMixin,pl:mixin:APP:mes-common.mixins.json:structures.StructureTemplateMixin,pl:mixin:APP:mes-common.mixins.json:structures.TemplateAccessor,pl:mixin:APP:zeta.mixins.json:StructureTemplateMixin,pl:mixin:APP:mvs-common.mixins.json:structures.StructureTemplateMixin,pl:mixin:APP:mvs-common.mixins.json:structures.TemplateAccessor,pl:mixin:APP:the_bumblezone-common.mixins.json:world.StructureTemplateAccessor,pl:mixin:APP:the_bumblezone-common.mixins.json:world.StructureTemplateMixin,pl:mixin:APP:mns-common.mixins.json:structures.StructureTemplateMixin,pl:mixin:APP:mns-common.mixins.json:structures.TemplateAccessor,pl:mixin:APP:structure_gel.mixins.json:TemplateMixins$StructureTemplateMixin,pl:mixin:APP:structure_gel.mixins.json:StructureTemplateAccessor,pl:mixin:A}
+	at net.minecraft.world.level.levelgen.structure.pools.SinglePoolElement.m_213695_(SinglePoolElement.java:124) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:integrated_api-common.mixins.json:structures.SinglePoolElementAccessor,pl:mixin:APP:yungsapi.mixins.json:accessor.SinglePoolElementAccessor,pl:mixin:APP:mes-common.mixins.json:structures.SinglePoolElementAccessor,pl:mixin:APP:quark.mixins.json:accessor.AccessorSinglePoolElement,pl:mixin:APP:mvs-common.mixins.json:structures.SinglePoolElementAccessor,pl:mixin:APP:the_bumblezone-common.mixins.json:world.SinglePoolElementAccessor,pl:mixin:APP:mns-common.mixins.json:structures.SinglePoolElementAccessor,pl:mixin:APP:structure_gel.mixins.json:SinglePoolElementMixin,pl:mixin:A}
+	at net.minecraft.world.level.levelgen.structure.PoolElementStructurePiece.m_226509_(PoolElementStructurePiece.java:89) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:integrated_api-common.mixins.json:structures.PoolElementStructurePieceAccessor,pl:mixin:APP:mes-common.mixins.json:structures.PoolElementStructurePieceAccessor,pl:mixin:APP:mvs-common.mixins.json:structures.PoolElementStructurePieceAccessor,pl:mixin:APP:mns-common.mixins.json:structures.PoolElementStructurePieceAccessor,pl:mixin:APP:structure_gel.mixins.json:PoolElementStructurePieceMixin,pl:mixin:A}
+	at net.minecraft.world.level.levelgen.structure.PoolElementStructurePiece.m_213694_(PoolElementStructurePiece.java:85) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:integrated_api-common.mixins.json:structures.PoolElementStructurePieceAccessor,pl:mixin:APP:mes-common.mixins.json:structures.PoolElementStructurePieceAccessor,pl:mixin:APP:mvs-common.mixins.json:structures.PoolElementStructurePieceAccessor,pl:mixin:APP:mns-common.mixins.json:structures.PoolElementStructurePieceAccessor,pl:mixin:APP:structure_gel.mixins.json:PoolElementStructurePieceMixin,pl:mixin:A}
+	at net.minecraft.world.level.levelgen.structure.StructureStart.m_226850_(StructureStart.java:90) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,re:classloading,pl:mixin:APP:blueprint.mixins.json:StructureStartMixin,pl:mixin:APP:zeta.mixins.json:StructureStartMixin,pl:mixin:A}
+	at net.minecraft.world.level.chunk.ChunkGenerator.m_223080_(ChunkGenerator.java:320) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:citadel.mixins.json:ChunkGeneratorMixin,pl:mixin:APP:betterdeserttemples.mixins.json:DisableVanillaPyramidsMixin,pl:mixin:APP:betterfortresses.mixins.json:DisableVanillaFortressesMixin,pl:mixin:APP:integrated_stronghold-common.mixins.json:DisableVanillaStrongholdsMixin,pl:mixin:APP:structure_gel.mixins.json:ChunkGeneratorMixin,pl:mixin:A}
+	at com.google.common.collect.ImmutableList.forEach(ImmutableList.java:422) ~[guava-31.1-jre.jar%2374!/:?] {re:mixin}
+	at net.minecraft.world.level.chunk.ChunkGenerator.m_213609_(ChunkGenerator.java:319) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:citadel.mixins.json:ChunkGeneratorMixin,pl:mixin:APP:betterdeserttemples.mixins.json:DisableVanillaPyramidsMixin,pl:mixin:APP:betterfortresses.mixins.json:DisableVanillaFortressesMixin,pl:mixin:APP:integrated_stronghold-common.mixins.json:DisableVanillaStrongholdsMixin,pl:mixin:APP:structure_gel.mixins.json:ChunkGeneratorMixin,pl:mixin:A}
+	at net.minecraft.world.level.chunk.ChunkStatus.m_279978_(ChunkStatus.java:108) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at net.minecraft.world.level.chunk.ChunkStatus$SimpleGenerationTask.m_214024_(ChunkStatus.java:309) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:classloading}
+	at net.minecraft.world.level.chunk.ChunkStatus.m_280308_(ChunkStatus.java:252) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleChunkGeneration$27(ChunkMap.java:643) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:skinrestorer.mixins.json:ChunkMapAccessor,pl:mixin:A}
+	at com.mojang.datafixers.util.Either$Left.map(Either.java:38) ~[datafixerupper-6.0.8.jar%2377!/:?] {}
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleChunkGeneration$29(ChunkMap.java:634) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:skinrestorer.mixins.json:ChunkMapAccessor,pl:mixin:A}
+	at java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482) ~[?:?] {}
+	at net.minecraft.server.level.ChunkTaskPriorityQueueSorter.m_143188_(ChunkTaskPriorityQueueSorter.java:62) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:classloading}
+	at net.minecraft.util.thread.ProcessorMailbox.m_18759_(ProcessorMailbox.java:91) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:classloading}
+	at net.minecraft.util.thread.ProcessorMailbox.m_18747_(ProcessorMailbox.java:146) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:classloading}
+	at net.minecraft.util.thread.ProcessorMailbox.run(ProcessorMailbox.java:102) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:classloading}
+	at java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1395) ~[?:?] {}
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?] {}
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Suspected Mod: 
+	SkinRestorer (skinrestorer), Version: 2.4.1+1.20-forge
+		Issue tracker URL: https://github.com/Suiranoil/SkinRestorer/issues
+		Mixin class: net.lionarius.skinrestorer.mixin.SkullBlockEntityMixin
+		Target: net.minecraft.world.level.block.entity.SkullBlockEntity
+		at TRANSFORMER/minecraft@1.20.1/net.minecraft.world.level.block.entity.SkullBlockEntity.handler$can000$fetchProfileByName(SkullBlockEntity.java:530)
+Stacktrace:
+	at net.minecraft.server.players.GameProfileCache.m_10996_(GameProfileCache.java:131) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,re:classloading}
+	at net.minecraft.world.level.block.entity.SkullBlockEntity.handler$can000$fetchProfileByName(SkullBlockEntity.java:530) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,re:classloading,pl:mixin:APP:skinrestorer.mixins.json:SkullBlockEntityMixin,pl:mixin:A}
+	at net.minecraft.world.level.block.entity.SkullBlockEntity.m_155738_(SkullBlockEntity.java) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,re:classloading,pl:mixin:APP:skinrestorer.mixins.json:SkullBlockEntityMixin,pl:mixin:A}
+	at net.minecraft.world.level.block.entity.SkullBlockEntity.m_59780_(SkullBlockEntity.java:134) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,re:classloading,pl:mixin:APP:skinrestorer.mixins.json:SkullBlockEntityMixin,pl:mixin:A}
+	at net.minecraft.world.level.block.entity.SkullBlockEntity.m_59769_(SkullBlockEntity.java:130) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,re:classloading,pl:mixin:APP:skinrestorer.mixins.json:SkullBlockEntityMixin,pl:mixin:A}
+	at net.minecraft.world.level.block.entity.SkullBlockEntity.m_142466_(SkullBlockEntity.java:78) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,re:classloading,pl:mixin:APP:skinrestorer.mixins.json:SkullBlockEntityMixin,pl:mixin:A}
+	at net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate.m_230328_(StructureTemplate.java:251) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:forge:forge_method_redirector,re:classloading,pl:accesstransformer:B,xf:fml:forge:forge_method_redirector,pl:mixin:APP:integrated_api-common.mixins.json:structures.StructureTemplateMixin,pl:mixin:APP:integrated_api-common.mixins.json:structures.TemplateAccessor,pl:mixin:APP:betterdeserttemples.mixins.json:StructureTemplateMixin,pl:mixin:APP:blueprint.mixins.json:StructureTemplateMixin,pl:mixin:APP:mes-common.mixins.json:structures.StructureTemplateMixin,pl:mixin:APP:mes-common.mixins.json:structures.TemplateAccessor,pl:mixin:APP:zeta.mixins.json:StructureTemplateMixin,pl:mixin:APP:mvs-common.mixins.json:structures.StructureTemplateMixin,pl:mixin:APP:mvs-common.mixins.json:structures.TemplateAccessor,pl:mixin:APP:the_bumblezone-common.mixins.json:world.StructureTemplateAccessor,pl:mixin:APP:the_bumblezone-common.mixins.json:world.StructureTemplateMixin,pl:mixin:APP:mns-common.mixins.json:structures.StructureTemplateMixin,pl:mixin:APP:mns-common.mixins.json:structures.TemplateAccessor,pl:mixin:APP:structure_gel.mixins.json:TemplateMixins$StructureTemplateMixin,pl:mixin:APP:structure_gel.mixins.json:StructureTemplateAccessor,pl:mixin:A}
+	at net.minecraft.world.level.levelgen.structure.pools.SinglePoolElement.m_213695_(SinglePoolElement.java:124) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:integrated_api-common.mixins.json:structures.SinglePoolElementAccessor,pl:mixin:APP:yungsapi.mixins.json:accessor.SinglePoolElementAccessor,pl:mixin:APP:mes-common.mixins.json:structures.SinglePoolElementAccessor,pl:mixin:APP:quark.mixins.json:accessor.AccessorSinglePoolElement,pl:mixin:APP:mvs-common.mixins.json:structures.SinglePoolElementAccessor,pl:mixin:APP:the_bumblezone-common.mixins.json:world.SinglePoolElementAccessor,pl:mixin:APP:mns-common.mixins.json:structures.SinglePoolElementAccessor,pl:mixin:APP:structure_gel.mixins.json:SinglePoolElementMixin,pl:mixin:A}
+	at net.minecraft.world.level.levelgen.structure.PoolElementStructurePiece.m_226509_(PoolElementStructurePiece.java:89) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:integrated_api-common.mixins.json:structures.PoolElementStructurePieceAccessor,pl:mixin:APP:mes-common.mixins.json:structures.PoolElementStructurePieceAccessor,pl:mixin:APP:mvs-common.mixins.json:structures.PoolElementStructurePieceAccessor,pl:mixin:APP:mns-common.mixins.json:structures.PoolElementStructurePieceAccessor,pl:mixin:APP:structure_gel.mixins.json:PoolElementStructurePieceMixin,pl:mixin:A}
+	at net.minecraft.world.level.levelgen.structure.PoolElementStructurePiece.m_213694_(PoolElementStructurePiece.java:85) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:integrated_api-common.mixins.json:structures.PoolElementStructurePieceAccessor,pl:mixin:APP:mes-common.mixins.json:structures.PoolElementStructurePieceAccessor,pl:mixin:APP:mvs-common.mixins.json:structures.PoolElementStructurePieceAccessor,pl:mixin:APP:mns-common.mixins.json:structures.PoolElementStructurePieceAccessor,pl:mixin:APP:structure_gel.mixins.json:PoolElementStructurePieceMixin,pl:mixin:A}
+	at net.minecraft.world.level.levelgen.structure.StructureStart.m_226850_(StructureStart.java:90) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,re:classloading,pl:mixin:APP:blueprint.mixins.json:StructureStartMixin,pl:mixin:APP:zeta.mixins.json:StructureStartMixin,pl:mixin:A}
+	at net.minecraft.world.level.chunk.ChunkGenerator.m_223080_(ChunkGenerator.java:320) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:citadel.mixins.json:ChunkGeneratorMixin,pl:mixin:APP:betterdeserttemples.mixins.json:DisableVanillaPyramidsMixin,pl:mixin:APP:betterfortresses.mixins.json:DisableVanillaFortressesMixin,pl:mixin:APP:integrated_stronghold-common.mixins.json:DisableVanillaStrongholdsMixin,pl:mixin:APP:structure_gel.mixins.json:ChunkGeneratorMixin,pl:mixin:A}
+	at com.google.common.collect.ImmutableList.forEach(ImmutableList.java:422) ~[guava-31.1-jre.jar%2374!/:?] {re:mixin}
+	at net.minecraft.world.level.chunk.ChunkGenerator.m_213609_(ChunkGenerator.java:319) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:citadel.mixins.json:ChunkGeneratorMixin,pl:mixin:APP:betterdeserttemples.mixins.json:DisableVanillaPyramidsMixin,pl:mixin:APP:betterfortresses.mixins.json:DisableVanillaFortressesMixin,pl:mixin:APP:integrated_stronghold-common.mixins.json:DisableVanillaStrongholdsMixin,pl:mixin:APP:structure_gel.mixins.json:ChunkGeneratorMixin,pl:mixin:A}
+	at net.minecraft.world.level.chunk.ChunkStatus.m_279978_(ChunkStatus.java:108) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at net.minecraft.world.level.chunk.ChunkStatus$SimpleGenerationTask.m_214024_(ChunkStatus.java:309) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:classloading}
+	at net.minecraft.world.level.chunk.ChunkStatus.m_280308_(ChunkStatus.java:252) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleChunkGeneration$27(ChunkMap.java:643) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:skinrestorer.mixins.json:ChunkMapAccessor,pl:mixin:A}
+	at com.mojang.datafixers.util.Either$Left.map(Either.java:38) ~[datafixerupper-6.0.8.jar%2377!/:?] {}
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleChunkGeneration$29(ChunkMap.java:634) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:skinrestorer.mixins.json:ChunkMapAccessor,pl:mixin:A}
+	at java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482) ~[?:?] {}
+	at net.minecraft.server.level.ChunkTaskPriorityQueueSorter.m_143188_(ChunkTaskPriorityQueueSorter.java:62) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:classloading}
+	at net.minecraft.util.thread.ProcessorMailbox.m_18759_(ProcessorMailbox.java:91) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:classloading}
+	at net.minecraft.util.thread.ProcessorMailbox.m_18747_(ProcessorMailbox.java:146) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:classloading}
+	at net.minecraft.util.thread.ProcessorMailbox.run(ProcessorMailbox.java:102) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:classloading}
+	at java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1395) ~[?:?] {}
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[?:?] {}
+-- Feature --
+Details:
+	Description: ResourceKey[minecraft:worldgen/structure / dungeons_arise:bathhouse]
+Stacktrace:
+	at net.minecraft.world.level.chunk.ChunkGenerator.m_213609_(ChunkGenerator.java:319) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:citadel.mixins.json:ChunkGeneratorMixin,pl:mixin:APP:betterdeserttemples.mixins.json:DisableVanillaPyramidsMixin,pl:mixin:APP:betterfortresses.mixins.json:DisableVanillaFortressesMixin,pl:mixin:APP:integrated_stronghold-common.mixins.json:DisableVanillaStrongholdsMixin,pl:mixin:APP:structure_gel.mixins.json:ChunkGeneratorMixin,pl:mixin:A}
+	at net.minecraft.world.level.chunk.ChunkStatus.m_279978_(ChunkStatus.java:108) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at net.minecraft.world.level.chunk.ChunkStatus$SimpleGenerationTask.m_214024_(ChunkStatus.java:309) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:classloading}
+	at net.minecraft.world.level.chunk.ChunkStatus.m_280308_(ChunkStatus.java:252) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleChunkGeneration$27(ChunkMap.java:643) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:skinrestorer.mixins.json:ChunkMapAccessor,pl:mixin:A}
+	at com.mojang.datafixers.util.Either$Left.map(Either.java:38) ~[datafixerupper-6.0.8.jar%2377!/:?] {}
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleChunkGeneration$29(ChunkMap.java:634) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:skinrestorer.mixins.json:ChunkMapAccessor,pl:mixin:A}
+	at java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482) ~[?:?] {}
+	at net.minecraft.server.level.ChunkTaskPriorityQueueSorter.m_143188_(ChunkTaskPriorityQueueSorter.java:62) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:classloading}
+	at net.minecraft.util.thread.ProcessorMailbox.m_18759_(ProcessorMailbox.java:91) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:classloading}
+	at net.minecraft.util.thread.ProcessorMailbox.m_18747_(ProcessorMailbox.java:146) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:classloading}
+	at net.minecraft.util.thread.ProcessorMailbox.run(ProcessorMailbox.java:102) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:classloading}
+	at java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1395) ~[?:?] {}
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?] {}
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?] {}
+
+
+-- Generation --
+Details:
+	CenterX: 39
+	CenterZ: 5
+	Seed: -4421014144594556376
+Stacktrace:
+	at net.minecraft.world.level.chunk.ChunkGenerator.m_213609_(ChunkGenerator.java:319) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:citadel.mixins.json:ChunkGeneratorMixin,pl:mixin:APP:betterdeserttemples.mixins.json:DisableVanillaPyramidsMixin,pl:mixin:APP:betterfortresses.mixins.json:DisableVanillaFortressesMixin,pl:mixin:APP:integrated_stronghold-common.mixins.json:DisableVanillaStrongholdsMixin,pl:mixin:APP:structure_gel.mixins.json:ChunkGeneratorMixin,pl:mixin:A}
+	at net.minecraft.world.level.chunk.ChunkStatus.m_279978_(ChunkStatus.java:108) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at net.minecraft.world.level.chunk.ChunkStatus$SimpleGenerationTask.m_214024_(ChunkStatus.java:309) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:classloading}
+	at net.minecraft.world.level.chunk.ChunkStatus.m_280308_(ChunkStatus.java:252) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleChunkGeneration$27(ChunkMap.java:643) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:skinrestorer.mixins.json:ChunkMapAccessor,pl:mixin:A}
+	at com.mojang.datafixers.util.Either$Left.map(Either.java:38) ~[datafixerupper-6.0.8.jar%2377!/:?] {}
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleChunkGeneration$29(ChunkMap.java:634) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:skinrestorer.mixins.json:ChunkMapAccessor,pl:mixin:A}
+	at java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482) ~[?:?] {}
+	at net.minecraft.server.level.ChunkTaskPriorityQueueSorter.m_143188_(ChunkTaskPriorityQueueSorter.java:62) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:classloading}
+	at net.minecraft.util.thread.ProcessorMailbox.m_18759_(ProcessorMailbox.java:91) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:classloading}
+	at net.minecraft.util.thread.ProcessorMailbox.m_18747_(ProcessorMailbox.java:146) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:classloading}
+	at net.minecraft.util.thread.ProcessorMailbox.run(ProcessorMailbox.java:102) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:classloading}
+	at java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1395) ~[?:?] {}
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?] {}
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?] {}
+
+
+-- Chunk to be generated --
+Details:
+	Location: 39,5
+	Position hash: 21474836519
+	Generator: net.minecraft.world.level.levelgen.NoiseBasedChunkGenerator@b2cbc4e
+Stacktrace:
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleChunkGeneration$27(ChunkMap.java:643) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:skinrestorer.mixins.json:ChunkMapAccessor,pl:mixin:A}
+	at com.mojang.datafixers.util.Either$Left.map(Either.java:38) ~[datafixerupper-6.0.8.jar%2377!/:?] {}
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleChunkGeneration$29(ChunkMap.java:634) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:skinrestorer.mixins.json:ChunkMapAccessor,pl:mixin:A}
+	at java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482) ~[?:?] {}
+	at net.minecraft.server.level.ChunkTaskPriorityQueueSorter.m_143188_(ChunkTaskPriorityQueueSorter.java:62) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:classloading}
+	at net.minecraft.util.thread.ProcessorMailbox.m_18759_(ProcessorMailbox.java:91) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:classloading}
+	at net.minecraft.util.thread.ProcessorMailbox.m_18747_(ProcessorMailbox.java:146) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:classloading}
+	at net.minecraft.util.thread.ProcessorMailbox.run(ProcessorMailbox.java:102) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:classloading}
+	at java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1395) ~[?:?] {}
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?] {}
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?] {}
+
+
+-- Wrapped in --
+Details:
+	Wrapping exception: ~~ERROR~~ CompletionException: net.minecraft.ReportedException: Feature placement
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.m_206568_(MinecraftServer.java:718) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:fastload.mixins.json:server.MinecraftServerMixin,pl:mixin:APP:citadel.mixins.json:MinecraftServerMixin,pl:mixin:APP:blueprint.mixins.json:MinecraftServerMixin,pl:mixin:APP:goodending.mixins.json:MinecraftServerMixin,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_130011_(MinecraftServer.java:675) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:fastload.mixins.json:server.MinecraftServerMixin,pl:mixin:APP:citadel.mixins.json:MinecraftServerMixin,pl:mixin:APP:blueprint.mixins.json:MinecraftServerMixin,pl:mixin:APP:goodending.mixins.json:MinecraftServerMixin,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_206580_(MinecraftServer.java:251) ~[server-1.20.1-20230612.114412-srg.jar%23249!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:fastload.mixins.json:server.MinecraftServerMixin,pl:mixin:APP:citadel.mixins.json:MinecraftServerMixin,pl:mixin:APP:blueprint.mixins.json:MinecraftServerMixin,pl:mixin:APP:goodending.mixins.json:MinecraftServerMixin,pl:mixin:A}
+	at java.lang.Thread.run(Thread.java:840) ~[?:?] {re:mixin}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.20.1
+	Minecraft Version ID: 1.20.1
+	Operating System: Linux (amd64) version 6.8.0-1027-azure
+	Java Version: 17.0.15, Ubuntu
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Ubuntu
+	Memory: 5635889480 bytes (5374 MiB) / 9655287808 bytes (9208 MiB) up to 17179869184 bytes (16384 MiB)
+	CPUs: 4
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD EPYC 7763 64-Core Processor
+	Identifier: AuthenticAMD Family 25 Model 1 Stepping 1
+	Microarchitecture: Zen 3
+	Frequency (GHz): -0.00
+	Number of physical packages: 1
+	Number of physical CPUs: 2
+	Number of logical CPUs: 4
+	Graphics card #0 name: unknown
+	Graphics card #0 vendor: unknown
+	Graphics card #0 VRAM (MB): 0.00
+	Graphics card #0 deviceId: unknown
+	Graphics card #0 versionInfo: unknown
+	Virtual memory max (MB): 7995.00
+	Virtual memory used (MB): 13431.92
+	Swap memory total (MB): 0.00
+	Swap memory used (MB): 0.00
+	JVM Flags: 2 total; -Xms2G -Xmx16G
+	Server Running: true
+	Player Count: 2 / 20; [ServerPlayer['michifu_xd123'/436, l='ServerLevel[world]', x=432.77, y=72.00, z=91.30], ServerPlayer['crisrob'/603, l='ServerLevel[world]', x=225.50, y=96.00, z=-34.50]]
+	Data Packs: vanilla, mod:fastload, mod:supermartijn642configlib (incompatible), mod:netherexp, mod:geckolib, mod:elysium_api, mod:aether, mod:hamsters (incompatible), mod:naturalist (incompatible), mod:attributefix (incompatible), mod:conjurer_illager (incompatible), mod:obscure_api (incompatible), mod:incendium, mod:mr_blossom_blade (incompatible), mod:integrated_api, mod:citadel (incompatible), mod:travelersbackpack, mod:artifacts, mod:yungsapi, mod:mixinextras (incompatible), mod:midnightlib (incompatible), mod:medievalend (incompatible), mod:betterdeserttemples, mod:medieval_buildings (incompatible), mod:bosses_of_mass_destruction, mod:terralith, mod:blueprint, mod:savage_and_ravage (incompatible), mod:projectile_damage (incompatible), mod:soulsweapons (incompatible), mod:betterfortresses, mod:cloth_config (incompatible), mod:forge, mod:athena, mod:friendsandfoes (incompatible), mod:structure_gel, mod:dungeons_arise, mod:tectonic (incompatible), mod:terrablender, mod:moonlight (incompatible), mod:goodending (incompatible), mod:netherdungeons, mod:mixinsquared (incompatible), mod:explorify (incompatible), mod:hoporp (incompatible), mod:watching, mod:platform (incompatible), mod:vanillabackport, mod:corgilib, mod:resourcefulconfig (incompatible), mod:kotlinforforge (incompatible), mod:ribbits (incompatible), mod:curios (incompatible), mod:flywheel, mod:ponder (incompatible), mod:create, mod:mes (incompatible), mod:integrated_stronghold, mod:u_desert (incompatible), mod:cerbons_api, mod:nullscape, mod:zeta (incompatible), mod:quark (incompatible), mod:supplementaries, mod:mr_dungeons_andtaverns (incompatible), mod:crittersandcompanions (incompatible), mod:noisium, mod:betterarcheology (incompatible), mod:resourcefullib (incompatible), mod:cumulus_menus, mod:mvs (incompatible), mod:deeperdarker, mod:creeperoverhaul, mod:architectury (incompatible), mod:deltaboxlib (incompatible), mod:palegardenbackport (incompatible), mod:nitrogen_internals, mod:the_bumblezone, mod:spawn (incompatible), mod:mns (incompatible), mod:hopo, mod:expandability (incompatible), mod:medieval_nether (incompatible), mod:skinrestorer (incompatible), mod:aquamirae (incompatible), Supplementaries Generated Pack, builtin/aether_accessories, create:dynamic_data, tectonic/terratonic
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	Is Modded: Definitely; Server brand changed to 'forge'
+	Type: Dedicated Server (map_server.txt)
+	ModLauncher: 10.0.9+10.0.9+main.dcd20f30
+	ModLauncher launch target: forgeserver
+	ModLauncher naming: srg
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.0.5.jar eventbus PLUGINSERVICE 
+		fmlloader-1.20.1-47.3.7.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.20.1-47.3.7.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.20.1-47.3.7.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.20.1-47.3.7.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.20.1-47.3.7.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.9.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		kotlinforforge@4.11.0
+		javafml@null
+		lowcodefml@null
+	Mod List: 
+		Fastload-Reforged-mc1.20.1-3.4.0.jar              |Fastload-Reforged             |fastload                      |3.4.0               |DONE      |Manifest: NOSIGNATURE
+		supermartijn642configlib-1.1.8-forge-mc1.20.jar   |SuperMartijn642's Config Libra|supermartijn642configlib      |1.1.8               |DONE      |Manifest: NOSIGNATURE
+		Jadens-Nether-Expansion-2.3.5.jar                 |Jaden's Nether Expansion      |netherexp                     |2.3.5               |DONE      |Manifest: NOSIGNATURE
+		geckolib-forge-1.20.1-4.7.2.jar                   |GeckoLib 4                    |geckolib                      |4.7.2               |DONE      |Manifest: NOSIGNATURE
+		ElysiumAPI-1.20.1-1.1.3.jar                       |Elysium                       |elysium_api                   |1.1.3               |DONE      |Manifest: NOSIGNATURE
+		aether-1.20.1-1.5.2-neoforge.jar                  |The Aether                    |aether                        |1.20.1-1.5.2-neoforg|DONE      |Manifest: NOSIGNATURE
+		hamsters-forge-1.0.3-1.20.1.jar                   |Hamsters                      |hamsters                      |1.20.1-1.0.3        |DONE      |Manifest: NOSIGNATURE
+		naturalist-5.0pre3+forge-1.20.1.jar               |Naturalist                    |naturalist                    |5.0pre3             |DONE      |Manifest: NOSIGNATURE
+		AttributeFix-Forge-1.20.1-21.0.4.jar              |AttributeFix                  |attributefix                  |21.0.4              |DONE      |Manifest: eb:c4:b1:67:8b:f9:0c:db:dc:4f:01:b1:8e:61:64:39:4c:10:85:0b:a6:c4:c7:48:f0:fa:95:f2:cb:08:3a:e5
+		the-conjurer-1.20.1-1.1.6.jar                     |The Conjurer                  |conjurer_illager              |1.1.6               |DONE      |Manifest: NOSIGNATURE
+		obscure_api-15.jar                                |Obscure API                   |obscure_api                   |15                  |DONE      |Manifest: NOSIGNATURE
+		Incendium_1.20.x_v5.3.5.jar                       |Incendium                     |incendium                     |5.3.5               |DONE      |Manifest: NOSIGNATURE
+		blossom-blade-1.2.jar                             |Blossom Blade                 |mr_blossom_blade              |1.2                 |DONE      |Manifest: NOSIGNATURE
+		integrated_api-1.5.1+1.20.1-forge.jar             |Integrated API                |integrated_api                |1.5.1+1.20.1-forge  |DONE      |Manifest: NOSIGNATURE
+		citadel-2.6.2-1.20.1.jar                          |Citadel                       |citadel                       |2.6.2               |DONE      |Manifest: NOSIGNATURE
+		travelersbackpack-forge-1.20.1-9.1.39.jar         |Traveler's Backpack           |travelersbackpack             |9.1.39              |DONE      |Manifest: NOSIGNATURE
+		artifacts-forge-9.5.16.jar                        |Artifacts                     |artifacts                     |9.5.16              |DONE      |Manifest: NOSIGNATURE
+		YungsApi-1.20-Forge-4.0.6.jar                     |YUNG's API                    |yungsapi                      |1.20-Forge-4.0.6    |DONE      |Manifest: NOSIGNATURE
+		mixinextras-forge-0.2.0-beta.9.jar                |MixinExtras                   |mixinextras                   |0.2.0-beta.9        |DONE      |Manifest: NOSIGNATURE
+		midnightlib-1.4.2-forge.jar                       |MidnightLib                   |midnightlib                   |1.4.2               |DONE      |Manifest: NOSIGNATURE
+		forge-medievalend-1.0.1.jar                       |Medieval Buildings [The End Ed|medievalend                   |1.0.1               |DONE      |Manifest: NOSIGNATURE
+		YungsBetterDesertTemples-1.20-Forge-3.0.3.jar     |YUNG's Better Desert Temples  |betterdeserttemples           |1.20-Forge-3.0.3    |DONE      |Manifest: NOSIGNATURE
+		medieval_buildings-1.20.1-1.1.2-forge.jar         |Medieval Buildings            |medieval_buildings            |1.1.2               |DONE      |Manifest: NOSIGNATURE
+		BOMD-Forge-1.20.1-1.1.2.jar                       |Bosses of Mass Destruction    |bosses_of_mass_destruction    |1.1.2               |DONE      |Manifest: NOSIGNATURE
+		Terralith_1.20.x_v2.5.4.jar                       |Terralith                     |terralith                     |2.5.4               |DONE      |Manifest: NOSIGNATURE
+		blueprint-1.20.1-7.1.3.jar                        |Blueprint                     |blueprint                     |7.1.3               |DONE      |Manifest: NOSIGNATURE
+		savage_and_ravage-1.20.1-6.0.0.jar                |Savage & Ravage               |savage_and_ravage             |6.0.0               |DONE      |Manifest: NOSIGNATURE
+		projectile_damage-forge-3.2.2+1.20.1.jar          |Projectile Damage Attribute   |projectile_damage             |3.2.2+1.20.1        |DONE      |Manifest: NOSIGNATURE
+		soulslike-weaponry-1.2.4-1.20.1-forge.jar         |Marium's Soulslike Weaponry   |soulsweapons                  |1.2.4-1.20.1-forge} |DONE      |Manifest: NOSIGNATURE
+		YungsBetterNetherFortresses-1.20-Forge-2.0.6.jar  |YUNG's Better Nether Fortresse|betterfortresses              |1.20-Forge-2.0.6    |DONE      |Manifest: NOSIGNATURE
+		cloth-config-11.1.136-forge.jar                   |Cloth Config v10 API          |cloth_config                  |11.1.136            |DONE      |Manifest: NOSIGNATURE
+		forge-1.20.1-47.3.7-universal.jar                 |Forge                         |forge                         |47.3.7              |DONE      |Manifest: 84:ce:76:e8:45:35:e4:0e:63:86:df:47:59:80:0f:67:6c:c1:5f:6e:5f:4d:b3:54:47:1a:9f:7f:ed:5e:f2:90
+		athena-forge-1.20.1-3.1.1.jar                     |Athena                        |athena                        |3.1.1               |DONE      |Manifest: NOSIGNATURE
+		friendsandfoes-forge-mc1.20.1-3.0.9.jar           |Friends&Foes                  |friendsandfoes                |3.0.9               |DONE      |Manifest: NOSIGNATURE
+		structure_gel-1.20.1-2.16.2.jar                   |Structure Gel API             |structure_gel                 |2.16.2              |DONE      |Manifest: NOSIGNATURE
+		DungeonsArise-1.20.x-2.1.58-release.jar           |When Dungeons Arise           |dungeons_arise                |2.1.58-1.20.x       |DONE      |Manifest: NOSIGNATURE
+		tectonic-forge-1.20.1-2.4.1.jar                   |Tectonic                      |tectonic                      |2.4.1               |DONE      |Manifest: NOSIGNATURE
+		server-1.20.1-20230612.114412-srg.jar             |Minecraft                     |minecraft                     |1.20.1              |DONE      |Manifest: NOSIGNATURE
+		TerraBlender-forge-1.20.1-3.0.1.10.jar            |TerraBlender                  |terrablender                  |3.0.1.10            |DONE      |Manifest: NOSIGNATURE
+		moonlight-1.20-2.14.13-forge.jar                  |Moonlight Library             |moonlight                     |1.20-2.14.13        |DONE      |Manifest: NOSIGNATURE
+		GoodEnding-1.20.1-1.0.1-Forge.jar                 |GoodEnding                    |goodending                    |1.20.1-1.0.1        |DONE      |Manifest: NOSIGNATURE
+		netherdungeons-1.1.0-snapshot4.jar                |Nether Dungeons               |netherdungeons                |1.1.0-snapshot4     |DONE      |Manifest: NOSIGNATURE
+		mixinsquared-forge-0.1.1.jar                      |MixinSquared                  |mixinsquared                  |0.1.1               |DONE      |Manifest: NOSIGNATURE
+		Explorify v1.6.2 f10-48.jar                       |Explorify                     |explorify                     |1.6.2               |DONE      |Manifest: NOSIGNATURE
+		HopoBetterRuinedPortals-[1.20-1.20.2]-1.3.7b.jar  |HopoBetterRuinedPortals       |hoporp                        |1.3.7               |DONE      |Manifest: NOSIGNATURE
+		From-The-Fog-1.20-v1.9.2-Forge-Fabric.jar         |From The Fog                  |watching                      |1.9.2               |DONE      |Manifest: NOSIGNATURE
+		Platform-forge-1.20.1-1.2.10.1.jar                |Platform                      |platform                      |1.2.10.1            |DONE      |Manifest: NOSIGNATURE
+		vanillabackport-forge-1.20.1-1.1.4.3.jar          |VanillaBackport               |vanillabackport               |1.1.4.3             |DONE      |Manifest: NOSIGNATURE
+		Corgilib-Forge-1.20.1-4.0.3.4.jar                 |CorgiLib                      |corgilib                      |4.0.3.4             |DONE      |Manifest: NOSIGNATURE
+		resourcefulconfig-forge-1.20.1-2.1.3.jar          |Resourcefulconfig             |resourcefulconfig             |2.1.3               |DONE      |Manifest: NOSIGNATURE
+		kffmod-4.11.0.jar                                 |Kotlin For Forge              |kotlinforforge                |4.11.0              |DONE      |Manifest: NOSIGNATURE
+		Ribbits-1.20.1-Forge-3.0.4.jar                    |Ribbits                       |ribbits                       |1.20.1-Forge-3.0.4  |DONE      |Manifest: NOSIGNATURE
+		curios-forge-5.14.1+1.20.1.jar                    |Curios API                    |curios                        |5.14.1+1.20.1       |DONE      |Manifest: NOSIGNATURE
+		flywheel-forge-1.20.1-1.0.4.jar                   |Flywheel                      |flywheel                      |1.0.4               |DONE      |Manifest: NOSIGNATURE
+		Ponder-Forge-1.20.1-1.0.80.jar                    |Ponder                        |ponder                        |1.0.80              |DONE      |Manifest: NOSIGNATURE
+		create-1.20.1-6.0.6.jar                           |Create                        |create                        |6.0.6               |DONE      |Manifest: NOSIGNATURE
+		mes-1.3.4-1.20-forge.jar                          |Moog's End Structures         |mes                           |1.3.4-1.20-forge    |DONE      |Manifest: NOSIGNATURE
+		integrated_stronghold-1.1.1+1.20.1-forge.jar      |Integrated Stronghold         |integrated_stronghold         |1.1.1+1.20.1-forge  |DONE      |Manifest: NOSIGNATURE
+		u_desert-1.6.2+mc1.19-1.21.7.jar                  |Unnamed Desert                |u_desert                      |1.6.2               |DONE      |Manifest: NOSIGNATURE
+		CerbonsAPI-Forge-1.20.1-1.1.0.jar                 |Cerbons API                   |cerbons_api                   |1.1.0               |DONE      |Manifest: NOSIGNATURE
+		Nullscape_1.20.x_v1.2.8.jar                       |Nullscape                     |nullscape                     |1.2.8               |DONE      |Manifest: NOSIGNATURE
+		Zeta-1.0-30.jar                                   |Zeta                          |zeta                          |1.0-30              |DONE      |Manifest: NOSIGNATURE
+		Quark-4.0-462.jar                                 |Quark                         |quark                         |4.0-462             |DONE      |Manifest: NOSIGNATURE
+		supplementaries-1.20-3.1.36.jar                   |Supplementaries               |supplementaries               |1.20-3.1.36         |DONE      |Manifest: NOSIGNATURE
+		dungeons-and-taverns-3.0.3.f.jar                  |Dungeons and Taverns          |mr_dungeons_andtaverns        |3.0.3.f             |DONE      |Manifest: NOSIGNATURE
+		crittersandcompanions-forge-2.2.2.jar             |Critters and Companions       |crittersandcompanions         |2.2.2               |DONE      |Manifest: NOSIGNATURE
+		noisium-forge-2.3.0+mc1.20-1.20.1.jar             |Noisium                       |noisium                       |2.3.0+mc1.20-1.20.1 |DONE      |Manifest: NOSIGNATURE
+		betterarcheology-1.2.1-1.20.1.jar                 |Better Archeology             |betterarcheology              |1.2.1-1.20.1        |DONE      |Manifest: NOSIGNATURE
+		resourcefullib-forge-1.20.1-2.1.20.jar            |Resourceful Lib               |resourcefullib                |2.1.20              |DONE      |Manifest: NOSIGNATURE
+		cumulus_menus-1.20.1-1.0.1-neoforge.jar           |Cumulus                       |cumulus_menus                 |1.20.1-1.0.1-neoforg|DONE      |Manifest: NOSIGNATURE
+		mvs-4.1.5-1.20.jar                                |Moog's Voyager Structures     |mvs                           |4.1.5-1.20-forge    |DONE      |Manifest: NOSIGNATURE
+		deeperdarker-forge-1.20.1-1.3.3.jar               |Deeper and Darker             |deeperdarker                  |1.3.3               |DONE      |Manifest: NOSIGNATURE
+		creeperoverhaul-3.0.2-forge.jar                   |Creeper Overhaul              |creeperoverhaul               |3.0.2               |DONE      |Manifest: NOSIGNATURE
+		architectury-9.2.14-forge (1).jar                 |Architectury                  |architectury                  |9.2.14              |DONE      |Manifest: NOSIGNATURE
+		deltaboxlib-forge-2.2.0+1.20.1.jar                |Deltabox Lib                  |deltaboxlib                   |2.2.0               |DONE      |Manifest: NOSIGNATURE
+		palegardenbackport-forge-2.0.3+1.20.1.jar         |Pale Garden Backport          |palegardenbackport            |2.0.3               |DONE      |Manifest: NOSIGNATURE
+		nitrogen_internals-1.20.1-1.0.12-neoforge.jar     |Nitrogen                      |nitrogen_internals            |1.20.1-1.0.12-neofor|DONE      |Manifest: NOSIGNATURE
+		the_bumblezone-7.8.0+1.20.1-forge.jar             |The Bumblezone                |the_bumblezone                |7.8.0+1.20.1-forge  |DONE      |Manifest: NOSIGNATURE
+		spawn-1.0.2-forge.jar                             |Spawn                         |spawn                         |1.20.1-1.0.2        |DONE      |Manifest: NOSIGNATURE
+		mns-1.0.1-1.20-forge.jar                          |Moog's Nether Structures      |mns                           |1.0.1-1.20-forge    |DONE      |Manifest: NOSIGNATURE
+		HopoBetterMineshaft-[1.20.1-1.20.4]-1.2.2d.jar    |HopoBetterMineshaft           |hopo                          |1.2.2               |DONE      |Manifest: NOSIGNATURE
+		expandability-forge-9.0.4.jar                     |ExpandAbility                 |expandability                 |9.0.4               |DONE      |Manifest: NOSIGNATURE
+		medieval_buildings_nether_edition-1.20.1-1.0.0-for|Medieval Buildings [The Nether|medieval_nether               |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		skinrestorer-2.4.1+1.20-forge.jar                 |SkinRestorer                  |skinrestorer                  |2.4.1+1.20-forge    |DONE      |Manifest: NOSIGNATURE
+		aquamirae-6.API15.jar                             |Aquamirae                     |aquamirae                     |6.API15             |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: 04254361-9418-4976-bec7-10804b022e47
+	FML: 47.3
+	Forge: net.minecraftforge:47.3.7

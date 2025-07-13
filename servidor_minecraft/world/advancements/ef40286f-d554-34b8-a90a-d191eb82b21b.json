@@ -73,75 +73,118 @@
   },
   "incendium:technical/sentrys_wrath": {
     "criteria": {
-      "log_spam_fixer": "2025-07-13 15:55:16 +0000"
+      "log_spam_fixer": "2025-07-13 16:52:41 +0000"
     },
     "done": false
   },
   "incendium:technical/inventory/sentrys_wrath": {
     "criteria": {
-      "log_spam_fixer": "2025-07-13 15:55:16 +0000"
+      "log_spam_fixer": "2025-07-13 16:52:41 +0000"
     },
     "done": false
   },
   "incendium:technical/multiplex_crossbow": {
     "criteria": {
-      "log_spam_fixer": "2025-07-13 15:55:16 +0000"
+      "log_spam_fixer": "2025-07-13 16:52:41 +0000"
     },
     "done": false
   },
   "incendium:technical/feed_ghastling": {
     "criteria": {
-      "log_spam_fixer": "2025-07-13 15:55:16 +0000"
+      "log_spam_fixer": "2025-07-13 16:52:41 +0000"
     },
     "done": false
   },
   "incendium:technical/on_inventory_change": {
     "criteria": {
-      "log_spam_fixer": "2025-07-13 15:55:16 +0000"
+      "log_spam_fixer": "2025-07-13 16:52:41 +0000"
     },
     "done": false
   },
   "incendium:technical/on_player_hurt": {
     "criteria": {
-      "log_spam_fixer": "2025-07-13 15:55:16 +0000"
+      "requirement": "2025-07-13 16:53:03 +0000",
+      "log_spam_fixer": "2025-07-13 16:52:41 +0000"
     },
-    "done": false
+    "done": true
   },
   "incendium:technical/firestorm": {
     "criteria": {
-      "log_spam_fixer": "2025-07-13 15:55:16 +0000"
+      "log_spam_fixer": "2025-07-13 16:52:41 +0000"
     },
     "done": false
   },
   "incendium:technical/holy_wrath": {
     "criteria": {
-      "log_spam_fixer": "2025-07-13 15:55:16 +0000"
+      "log_spam_fixer": "2025-07-13 16:52:41 +0000"
     },
     "done": false
   },
   "incendium:technical/on_block": {
     "criteria": {
-      "log_spam_fixer": "2025-07-13 15:55:16 +0000"
+      "log_spam_fixer": "2025-07-13 16:52:41 +0000"
     },
     "done": false
   },
   "incendium:technical/inventory/firestorm": {
     "criteria": {
-      "log_spam_fixer": "2025-07-13 15:55:16 +0000"
+      "log_spam_fixer": "2025-07-13 16:52:41 +0000"
     },
     "done": false
   },
   "incendium:technical/give_ghastling": {
     "criteria": {
-      "log_spam_fixer": "2025-07-13 15:55:16 +0000"
+      "log_spam_fixer": "2025-07-13 16:52:41 +0000"
     },
     "done": false
   },
   "incendium:technical/on_kill": {
     "criteria": {
-      "log_spam_fixer": "2025-07-13 15:55:16 +0000"
+      "log_spam_fixer": "2025-07-13 16:52:41 +0000"
     },
     "done": false
+  },
+  "minecraft:story/mine_stone": {
+    "criteria": {
+      "get_stone": "2025-07-13 16:52:34 +0000"
+    },
+    "done": true
+  },
+  "create:root": {
+    "criteria": {
+      "0": "2025-07-13 16:52:02 +0000"
+    },
+    "done": true
+  },
+  "minecraft:story/upgrade_tools": {
+    "criteria": {
+      "stone_pickaxe": "2025-07-13 16:52:42 +0000"
+    },
+    "done": true
+  },
+  "incendium:technical/on_hit": {
+    "criteria": {
+      "not_target": "2025-07-13 16:53:32 +0000"
+    },
+    "done": false
+  },
+  "aquamirae:adventure/root": {
+    "criteria": {
+      "crafting_table": "2025-07-13 16:52:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:story/root": {
+    "criteria": {
+      "crafting_table": "2025-07-13 16:52:10 +0000"
+    },
+    "done": true
+  },
+  "soulsweapons:root": {
+    "criteria": {
+      "crafting_table": "2025-07-13 16:52:10 +0000"
+    },
+    "done": true
   },
   "DataVersion": 3465
 }

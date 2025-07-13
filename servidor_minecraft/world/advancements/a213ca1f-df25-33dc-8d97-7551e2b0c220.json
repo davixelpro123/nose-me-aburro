@@ -1,9 +1,111 @@
 {
+  "dungeons_arise:wda_root": {
+    "criteria": {
+      "WDA": "2025-07-13 16:32:13 +0000"
+    },
+    "done": true
+  },
+  "friendsandfoes:misc/yellow_dye_from_buttercup": {
+    "criteria": {
+      "has_the_recipe": "2025-07-13 16:32:13 +0000"
+    },
+    "done": true
+  },
+  "the_bumblezone:root": {
+    "criteria": {
+      "instant_granted": "2025-07-13 16:32:13 +0000"
+    },
+    "done": true
+  },
+  "the_bumblezone:wiki": {
+    "criteria": {
+      "instant_granted": "2025-07-13 16:32:13 +0000"
+    },
+    "done": true
+  },
+  "betterdeserttemples:root": {
+    "criteria": {
+      "always": "2025-07-13 16:32:13 +0000"
+    },
+    "done": true
+  },
+  "incendium:technical/new_player": {
+    "criteria": {
+      "requirement": "2025-07-13 16:32:13 +0000"
+    },
+    "done": true
+  },
   "incendium:technical/scroll_of_returning": {
     "criteria": {
       "log_spam_fixer": "2025-07-13 16:32:14 +0000"
     },
     "done": false
+  },
+  "incendium:technical/using/ragnarok": {
+    "criteria": {
+      "log_spam_fixer": "2025-07-13 16:32:14 +0000"
+    },
+    "done": false
+  },
+  "incendium:technical/using/trailblazer": {
+    "criteria": {
+      "log_spam_fixer": "2025-07-13 16:32:14 +0000"
+    },
+    "done": false
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:old_growth_pine_taiga": "2025-07-13 16:32:14 +0000"
+    },
+    "done": false
+  },
+  "incendium:technical/using/shield": {
+    "criteria": {
+      "log_spam_fixer": "2025-07-13 16:32:14 +0000"
+    },
+    "done": false
+  },
+  "the_bumblezone:biomes/discover_all_biomes": {
+    "criteria": {
+      "bumbling_beepartments": "2025-07-13 16:32:14 +0000"
+    },
+    "done": false
+  },
+  "create:root": {
+    "criteria": {
+      "0": "2025-07-13 16:33:46 +0000"
+    },
+    "done": true
+  },
+  "aquamirae:adventure/root": {
+    "criteria": {
+      "crafting_table": "2025-07-13 16:34:37 +0000"
+    },
+    "done": true
+  },
+  "minecraft:story/root": {
+    "criteria": {
+      "crafting_table": "2025-07-13 16:34:37 +0000"
+    },
+    "done": true
+  },
+  "soulsweapons:root": {
+    "criteria": {
+      "crafting_table": "2025-07-13 16:34:37 +0000"
+    },
+    "done": true
+  },
+  "minecraft:story/mine_stone": {
+    "criteria": {
+      "get_stone": "2025-07-13 16:35:00 +0000"
+    },
+    "done": true
+  },
+  "minecraft:story/upgrade_tools": {
+    "criteria": {
+      "stone_pickaxe": "2025-07-13 16:35:24 +0000"
+    },
+    "done": true
   },
   "incendium:technical/sentrys_wrath": {
     "criteria": {
@@ -23,53 +125,11 @@
     },
     "done": false
   },
-  "incendium:technical/using/ragnarok": {
-    "criteria": {
-      "log_spam_fixer": "2025-07-13 16:32:14 +0000"
-    },
-    "done": false
-  },
-  "dungeons_arise:wda_root": {
-    "criteria": {
-      "WDA": "2025-07-13 16:32:13 +0000"
-    },
-    "done": true
-  },
-  "minecraft:story/mine_stone": {
-    "criteria": {
-      "get_stone": "2025-07-13 16:35:00 +0000"
-    },
-    "done": true
-  },
-  "friendsandfoes:misc/yellow_dye_from_buttercup": {
-    "criteria": {
-      "has_the_recipe": "2025-07-13 16:32:13 +0000"
-    },
-    "done": true
-  },
-  "the_bumblezone:root": {
-    "criteria": {
-      "instant_granted": "2025-07-13 16:32:13 +0000"
-    },
-    "done": true
-  },
-  "create:root": {
-    "criteria": {
-      "0": "2025-07-13 16:33:46 +0000"
-    },
-    "done": true
-  },
   "incendium:technical/feed_ghastling": {
     "criteria": {
       "log_spam_fixer": "2025-07-13 16:35:27 +0000"
     },
     "done": false
-  },
-  "minecraft:story/upgrade_tools": {
-    "criteria": {
-      "stone_pickaxe": "2025-07-13 16:35:24 +0000"
-    },
-    "done": true
   },
   "incendium:technical/on_inventory_change": {
     "criteria": {
@@ -77,33 +137,16 @@
     },
     "done": false
   },
-  "the_bumblezone:wiki": {
-    "criteria": {
-      "instant_granted": "2025-07-13 16:32:13 +0000"
-    },
-    "done": true
-  },
   "incendium:technical/on_player_hurt": {
     "criteria": {
+      "requirement": "2025-07-13 16:47:16 +0000",
       "log_spam_fixer": "2025-07-13 16:35:27 +0000"
     },
-    "done": false
-  },
-  "incendium:technical/using/trailblazer": {
-    "criteria": {
-      "log_spam_fixer": "2025-07-13 16:32:14 +0000"
-    },
-    "done": false
+    "done": true
   },
   "incendium:technical/firestorm": {
     "criteria": {
       "log_spam_fixer": "2025-07-13 16:35:27 +0000"
-    },
-    "done": false
-  },
-  "minecraft:adventure/adventuring_time": {
-    "criteria": {
-      "minecraft:old_growth_pine_taiga": "2025-07-13 16:32:14 +0000"
     },
     "done": false
   },
@@ -119,53 +162,11 @@
     },
     "done": false
   },
-  "incendium:technical/using/shield": {
-    "criteria": {
-      "log_spam_fixer": "2025-07-13 16:32:14 +0000"
-    },
-    "done": false
-  },
   "incendium:technical/inventory/firestorm": {
     "criteria": {
       "log_spam_fixer": "2025-07-13 16:35:27 +0000"
     },
     "done": false
-  },
-  "betterdeserttemples:root": {
-    "criteria": {
-      "always": "2025-07-13 16:32:13 +0000"
-    },
-    "done": true
-  },
-  "aquamirae:adventure/root": {
-    "criteria": {
-      "crafting_table": "2025-07-13 16:34:37 +0000"
-    },
-    "done": true
-  },
-  "the_bumblezone:biomes/discover_all_biomes": {
-    "criteria": {
-      "bumbling_beepartments": "2025-07-13 16:32:14 +0000"
-    },
-    "done": false
-  },
-  "minecraft:story/root": {
-    "criteria": {
-      "crafting_table": "2025-07-13 16:34:37 +0000"
-    },
-    "done": true
-  },
-  "soulsweapons:root": {
-    "criteria": {
-      "crafting_table": "2025-07-13 16:34:37 +0000"
-    },
-    "done": true
-  },
-  "incendium:technical/new_player": {
-    "criteria": {
-      "requirement": "2025-07-13 16:32:13 +0000"
-    },
-    "done": true
   },
   "incendium:technical/give_ghastling": {
     "criteria": {
